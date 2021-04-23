@@ -1,0 +1,11 @@
+spring:
+  #指定配置文件名字，在配置中心找到配置文件
+  application:
+    name: menu
+  profiles:
+    active: dev
+    #这个是对应configserver文件中的menu-dev文件
+  cloud:
+    config:
+      uri: http://localhost:8762
+      fail-fast: true
